@@ -34,7 +34,7 @@ module.exports = async function handler(req, res) {
           Authorization: `Bearer ${apiKey}`,
         },
         body: JSON.stringify({
-          model: process.env.GROQ_MODEL || "openai/gpt-oss-20b",
+          model: process.env.GROQ_MODEL || "llama-3.3-70b-versatile",
           temperature: 0.8,
           max_tokens: 800,
           messages: [

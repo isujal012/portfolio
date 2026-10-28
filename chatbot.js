@@ -40,7 +40,10 @@ async function sendChatMessage() {
     });
 
     if (response.status === 429) throw new Error("RATE_LIMIT");
-    if (!response.ok) throw new Error("API_ERROR");
+    if (!response.ok) {
+      const errData = await response.json().catch(() => null);
+      throw new Error(errData?.error || "API_ERROR");
+    }
 
     const data = await response.json();
     if (typeof data.answer !== "string" || !data.answer.trim()) {
@@ -54,6 +57,8 @@ async function sendChatMessage() {
       showChatMessage("assistant", "Too many requests. Please wait and try again.");
     } else if (!navigator.onLine) {
       showChatMessage("assistant", "No internet connection. Please reconnect.");
+    } else if (error.message && error.message !== "API_ERROR" && error.message !== "INVALID_RESPONSE") {
+      showChatMessage("assistant", error.message);
     } else {
       showChatMessage("assistant", "AI service unavailable. Please try again.");
     }
