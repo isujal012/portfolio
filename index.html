@@ -1,0 +1,164 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Sujal Gupta's personal portfolio, skills, and projects." />
+    <title>Sujal Gupta — B.Tech (AI &amp; ML) Student &amp; Aspiring Developer</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="chatbot.css" />
+  </head>
+
+  <body>
+    <header class="site-header" id="home">
+      <nav class="site-nav" aria-label="Main navigation">
+        <a class="brand" href="#home">Sujal Gupta</a>
+        <div class="nav-links">
+          <a href="#about">About Me</a>
+          <a href="#skills">Skills</a>
+          <a href="#projects">Projects</a>
+          <a href="#contact">Contact</a>
+          <a href="#aiChatSection">AI Chatbot</a>
+        </div>
+      </nav>
+
+      <div class="hero">
+        <img class="profile-image" src="https://avatars.githubusercontent.com/u/198961867?v=4" alt="GitHub profile image for Sujal Gupta" width="112" height="112" />
+        <div>
+          <p class="eyebrow">B.Tech · Artificial Intelligence &amp; Machine Learning</p>
+          <h1>Hi, I'm Sujal Gupta.</h1>
+          <p class="tagline">B.Tech (AI &amp; ML) student building practical programming, web development, and AI projects.</p>
+          <p class="hero-links">
+            <a href="https://github.com/isujal012" target="_blank" rel="noopener noreferrer">GitHub profile</a>
+            <a href="#projects">Explore my projects</a>
+          </p>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section id="about" class="about">
+        <h2>About Me</h2>
+        <p>
+          I'm Sujal Gupta, a B.Tech (AI &amp; ML) student who enjoys learning programming fundamentals
+          and building practical projects. I am developing my skills in web technologies, Python, and AI/ML
+          by working through coursework, hands-on practice, and interactive applications.
+        </p>
+        <p>
+          My current learning interests include HTML, CSS, JavaScript, Python, Git, and web APIs.
+          I'm continuing to strengthen my fundamentals while building and improving practical projects.
+        </p>
+        <p><strong>Education:</strong> B.Tech (AI and ML Specialization) student.</p>
+      </section>
+
+      <section id="skills" class="skills">
+        <h2>Skills</h2>
+        <ul class="skills-list">
+          <li>HTML</li>
+          <li>CSS</li>
+          <li>JavaScript</li>
+          <li>Python</li>
+          <li>Git &amp; GitHub</li>
+          <li>API integration</li>
+          <li>Basic Node.js</li>
+        </ul>
+      </section>
+
+      <section id="projects" class="projects">
+        <h2>My Projects</h2>
+        <p>Coursework and practice projects I've built and improved.</p>
+        <label class="project-search-label" for="projectSearch">Search by project name or technology</label>
+        <input type="search" id="projectSearch" placeholder="Try Python, Quiz, Book, JavaScript..." autocomplete="off" />
+        <p id="projectSearchStatus" class="search-status" role="status" aria-live="polite">Showing all 5 projects.</p>
+
+        <div class="project-grid" id="projectGrid">
+          <article class="project-card" data-search="python programs collection basics practice exercises python fundamentals">
+            <p class="project-type">Python · Fundamentals</p>
+            <h3>Python Programs Collection</h3>
+            <p>A collection of Python practice exercises and programming fundamentals.</p>
+            <p class="tech-list"><strong>Technologies:</strong> Python</p>
+            <div class="project-links">
+              <a href="https://github.com/isujal012/python_basics" target="_blank" rel="noopener noreferrer">GitHub repository</a>
+            </div>
+          </article>
+
+          <article class="project-card" data-search="interactive quiz application questions test html css javascript web">
+            <p class="project-type">Web · Interactive</p>
+            <h3>Interactive Quiz Application</h3>
+            <p>An interactive quiz application developed as coursework to practise interactive web-page behaviour.</p>
+            <p class="tech-list"><strong>Technologies:</strong> HTML, CSS, JavaScript</p>
+            <div class="project-links">
+              <a href="https://github.com/isujal012/quiz_app" target="_blank" rel="noopener noreferrer">GitHub repository</a>
+            </div>
+          </article>
+
+          <article class="project-card" data-search="book reading list application books reading list html css javascript deployed app">
+            <p class="project-type">Web · Application</p>
+            <h3>Book Reading List Application</h3>
+            <p>A reading list application for adding and managing books and reading goals.</p>
+            <p class="tech-list"><strong>Technologies:</strong> HTML, CSS, JavaScript</p>
+            <div class="project-links">
+              <a href="https://github.com/isujal012/reading_list" target="_blank" rel="noopener noreferrer">GitHub repository</a>
+              <a href="https://readinglist-chi.vercel.app" target="_blank" rel="noopener noreferrer">Live application</a>
+            </div>
+          </article>
+
+          <article class="project-card" data-search="moonify music streaming audio player web application html css javascript">
+            <p class="project-type">Web · Multimedia</p>
+            <h3>Moonify — Music Web App</h3>
+            <p>A modern music streaming web application featuring responsive audio controls and playlist interface.</p>
+            <p class="tech-list"><strong>Technologies:</strong> HTML, CSS, JavaScript</p>
+            <div class="project-links">
+              <a href="https://github.com/isujal012/Moonify" target="_blank" rel="noopener noreferrer">GitHub repository</a>
+              <a href="https://moonify-snowy.vercel.app" target="_blank" rel="noopener noreferrer">Live application</a>
+            </div>
+          </article>
+
+          <article class="project-card" data-search="python directory file utilities automation scripts python practical">
+            <p class="project-type">Python · Practical</p>
+            <h3>Python Directory &amp; File Utilities</h3>
+            <p>Practical Python scripting for directory manipulation, file organization, and automation exercises.</p>
+            <p class="tech-list"><strong>Technologies:</strong> Python</p>
+            <div class="project-links">
+              <a href="https://github.com/isujal012/directory" target="_blank" rel="noopener noreferrer">GitHub repository</a>
+            </div>
+          </article>
+        </div>
+        <p id="noProjectsMessage" class="no-results" hidden>No projects match that search. Try Python, Quiz, Book, or JavaScript.</p>
+      </section>
+
+      <section id="weather" class="weather-section">
+        <h2>Weather</h2>
+        <p>Check the current weather by city.</p>
+        <div class="weather-controls">
+          <input type="text" id="cityInput" placeholder="Enter a city" aria-label="City name" />
+          <button id="weatherButton" type="button">Get Weather</button>
+        </div>
+        <div id="weatherResult" aria-live="polite">Enter a city to see the weather.</div>
+      </section>
+    </main>
+
+    <section id="aiChatSection" class="ai-chat">
+      <h2>Ask My AI Assistant</h2>
+      <p>Ask questions about my background, skills, projects, or technologies.</p>
+      <div id="chatMessages" aria-live="polite" aria-label="Chat messages"></div>
+      <div class="chat-controls">
+        <input type="text" id="userInput" placeholder="Ask a question..." aria-label="Your question" />
+        <button id="sendButton" type="button">Send</button>
+      </div>
+      <p id="chatStatus" role="status" aria-live="polite"></p>
+      <p class="chat-note">The assistant answers using portfolio information. Do not enter private information.</p>
+    </section>
+
+    <footer id="contact" class="site-footer">
+      <h2>Contact</h2>
+      <p>You can connect with me through GitHub.</p>
+      <p><a href="https://github.com/isujal012" target="_blank" rel="noopener noreferrer">GitHub profile: @isujal012</a></p>
+    </footer>
+
+    <button id="themeToggle" type="button" aria-pressed="false">Switch to Dark Mode</button>
+    <script src="./script.js"></script>
+    <script src="config.js"></script>
+    <script src="chatbot.js"></script>
+  </body>
+</html>
