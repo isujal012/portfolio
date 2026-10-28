@@ -1,9 +1,4 @@
 {
-  "version": 2,
-  "rewrites": [
-    {
-      "source": "/api/chat",
-      "destination": "/api/chat.js"
-    }
-  ]
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "outputDirectory": "."
 }
